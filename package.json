@@ -1,0 +1,18 @@
+{
+  "name": "sunergeo-inject-depends",
+  "version": "0.0.1",
+  "description": "Generates a list of js and css dependencies and copies them to a specified target destination",
+  "main": "include_depends.js",
+  "author": "Shawn Bradley - Sunergeo Systems, Inc.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunergeo/sunergeo-inject-depends.git"
+  },
+  "readmeFilename": "README.md",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
+
