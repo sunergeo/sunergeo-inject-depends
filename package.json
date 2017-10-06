@@ -1,18 +1,38 @@
 {
   "name": "sunergeo-inject-depends",
-  "version": "0.0.3",
   "description": "Generates a list of js and css dependencies and copies them to a specified target destination",
-  "files": ["index.js"],
-  "author": "Shawn Bradley - Sunergeo Systems, Inc.",
-  "license": "MIT",
+  "version": "0.0.3",
+  "homepage": "https://github.com/sunergeo/sunergeo-inject-depends",
+  "author": {
+    "name": "Shawn Bradley",
+    "email": "sbradley@sunergeosystems.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sunergeo/sunergeo-inject-depends.git"
   },
-  "readmeFilename": "README.md",
-  "devDependencies": {
+  "bugs": {
+    "url": "https://github.com/sunergeo/sunergeo-inject-depends/issues"
   },
-  "dependencies": {
-  }
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/sunergeo/sunergeo-inject-depends/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
 }
-
