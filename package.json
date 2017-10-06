@@ -1,7 +1,7 @@
 {
   "name": "sunergeo-inject-depends",
   "description": "Generates a list of js and css dependencies and copies them to a specified target destination",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/sunergeo/sunergeo-inject-depends",
   "author": {
     "name": "Shawn Bradley",
