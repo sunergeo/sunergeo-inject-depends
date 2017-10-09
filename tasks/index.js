@@ -13,11 +13,8 @@
         bower_dependencies.js.forEach(function (file) {
             var destfile = path.resolve(__filename, dest + "/" + path.basename(file));
             destfile = path.normalize(path.resolve(dest) + "/" + path.basename(file));
-            grunt.log.ok("Copying file " + file + " to " + destfile);
-
-            const readableStream = fs.createReadStream(file);
-            var writableStream = fs.createWriteStream(destfile);
-            readableStream.pipe(writableStream);
+            fs.copyFileSync(file, destfile);
+            grunt.log.ok("Copied file " + file + " to " + destfile);
 
             var inc = tpl.replace("[[filename]]", path.basename(file));
             js_inc += inc + "\r\n";
@@ -37,11 +34,8 @@
         bower_dependencies.css.forEach(function (file) {
             var destfile = path.resolve(__filename, dest + "/" + path.basename(file));
             destfile = path.normalize(path.resolve(dest) + "/" + path.basename(file));
-            grunt.log.ok("Copying file " + file + " to " + destfile);
-
-            const readableStream = fs.createReadStream(file);
-            var writableStream = fs.createWriteStream(destfile);
-            readableStream.pipe(writableStream);
+            fs.copyFileSync(file, destfile);
+            grunt.log.ok("Copied file " + file + " to " + destfile);
 
             var inc = tpl.replace("[[filename]]", path.basename(file));
             css_inc += inc + "\r\n";
